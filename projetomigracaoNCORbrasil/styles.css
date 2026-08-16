@@ -1,0 +1,86 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.sobre-ncor {
+  margin-bottom: 80px;
+}
+.sobre-ncor h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.sobre-ncor h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--cor-texto-principal);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.split-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: var(--cor-texto-secundario);
+}
+.split-text p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.pilares-section {
+  background-color: var(--fundo-secao-clara);
+  padding: 60px 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+.pilares-section h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.card {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.card .material-symbols-outlined {
+  font-size: 48px;
+  color: var(--cor-texto-principal);
+}
+.card h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+}

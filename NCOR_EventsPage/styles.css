@@ -1,0 +1,67 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --cor-ancora: #0056b3;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.evento-item {
+  margin-bottom: 20px;
+}
+.evento-titulo {
+  font-size: 1.8rem;
+  color: var(--cor-texto-principal);
+  line-height: 1.3;
+}
+.evento-p {
+  margin-bottom: 0 !important;
+  color: var(--cor-texto-secundario);
+}
+.evento-link {
+  display: inline-block;
+  color: var(--cor-ancora);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.evento-link:hover {
+  text-decoration: underline;
+}
+.evento-imagem {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.evento-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+.evento-separador {
+  border: none;
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 45px 0;
+}
+
+@media (max-width: 767px) {
+  .evento-corpo {
+    flex-direction: column; /* No celular, empilha a foto em cima e o texto embaixo */
+    align-items: center; /* Centraliza a foto */
+    text-align: center;
+  }
+
+  .evento-titulo {
+    font-size: 1.5rem;
+  }
+
+  .img-banner {
+    max-width: 100%; /* O banner cresce para ocupar a tela toda */
+  }
+
+  .evento-detalhes {
+    text-align: left; /* Mantém o texto alinhado à esquerda mesmo com a foto centralizada */
+  }
+}

@@ -1,0 +1,10 @@
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Pastas de Editores de Código
+.vscode/
+.idea/
+
+# Arquivos de log
+*.log

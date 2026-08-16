@@ -1,0 +1,60 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --cor-ancora: #0056b3;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.page-content {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 120px auto 80px;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.page-content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--cor-texto-principal);
+}
+.page-content h2,
+.page-content h3 {
+  color: var(--cor-texto-principal);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.page-content a {
+  color: var(--cor-ancora);
+  text-decoration: none;
+}
+.page-content a:hover {
+  text-decoration: underline;
+}
+.page-content p {
+  margin-bottom: 20px;
+  color: var(--cor-texto-secundario);
+  text-align: justify;
+}
+.page-content ul {
+  margin-bottom: 25px;
+  padding-left: 40px;
+  color: var(--cor-texto-secundario);
+}
+.page-content li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .page-content {
+    margin: 100px 15px 40px;
+    padding: 30px 20px;
+  }
+}
