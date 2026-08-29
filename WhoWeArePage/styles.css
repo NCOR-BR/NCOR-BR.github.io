@@ -1,0 +1,99 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.conteudo-pub {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+.conteudo-pub.ativo {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pub-img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.pub-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-card {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* ==========================================================
+   PÁGINA QUEM SOMOS (PERFIS)
+========================================================== */
+
+.perfil-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.perfil-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: var(--cor-texto-principal);
+}
+
+.perfil-info p {
+  margin-bottom: 15px;
+}
+
+.perfil-links {
+  font-size: 0.9rem;
+}
+
+.perfil-links a:first-child {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .perfil-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

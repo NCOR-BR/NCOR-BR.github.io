@@ -13,21 +13,41 @@ window.addEventListener("DOMContentLoaded", () => {
 
   linksMenu.forEach((link) => {
     link.classList.remove("ativo_menu");
-    const ehMatchExato = urlAtual.split("#")[0] === link.href.split("#")[0];
 
-    const ehPaginaInicial =
-      (urlAtual.endsWith("/") || urlAtual.endsWith("/index.html")) &&
-      link.href.endsWith("index.html");
-
-    const pastaDoLink = link.getAttribute("href").split("/")[1];
-
-    const estaNaSubRota =
-      pastaDoLink &&
-      pastaDoLink !== "index.html" &&
-      urlAtual.includes(`/${pastaDoLink}/`);
-
-    if (ehMatchExato || ehPaginaInicial || estaNaSubRota) {
+    if (urlAtual.split("#")[0] === link.href.split("#")[0]) {
       link.classList.add("ativo_menu");
+      return;
+    }
+
+    const hrefEscrito = link.getAttribute("href");
+
+    if (hrefEscrito && hrefEscrito.includes("Page")) {
+      const nomeDaPasta = hrefEscrito.match(/([a-zA-Z0-9_]+Page)/)[0];
+
+      if (urlAtual.includes(nomeDaPasta)) {
+        link.classList.add("ativo_menu");
+      }
     }
   });
+
+  const botoesFiltro = document.querySelectorAll(".btn-filtro");
+  const conteudosPub = document.querySelectorAll(".conteudo-pub");
+
+  if (botoesFiltro.length > 0) {
+    botoesFiltro.forEach((botao) => {
+      botao.addEventListener("click", () => {
+        botoesFiltro.forEach((b) => b.classList.remove("ativo"));
+
+        botao.classList.add("ativo");
+
+        const alvo = botao.getAttribute("data-target");
+
+        conteudosPub.forEach((conteudo) => {
+          conteudo.classList.remove("ativo");
+        });
+
+        document.getElementById(alvo).classList.add("ativo");
+      });
+    });
+  }
 });

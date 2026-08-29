@@ -1,0 +1,91 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.conteudo-pub {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+.conteudo-pub.ativo {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pub-img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.pub-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================
+   MATERIAIS SUPLEMENTARES (SUBPÁGINAS DE LIVROS)
+========================================================== */
+
+.img-livro-simples {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 20px 0;
+  display: block;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.img-livro-simples:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.secao-suplementar {
+  margin-bottom: 40px;
+}
+
+.secao-suplementar h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--cor-texto-principal);
+  text-transform: uppercase;
+}
+
+.links-inline {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.obs-box {
+  border-left: 4px solid #d3d3d3;
+  padding: 10px 15px;
+  margin: 10px 0 20px;
+  background-color: #fcfcfc;
+  color: var(--cor-texto-secundario);
+  font-size: 0.95rem;
+}
