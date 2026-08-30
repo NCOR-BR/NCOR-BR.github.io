@@ -1,0 +1,127 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --cor-ancora: #0056b3;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.conteudo-pub {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+.conteudo-pub.ativo {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pub-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.pub-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mapa-img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.mapa-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.legenda {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+  text-align: center !important;
+  margin-top: 5px;
+}
+
+.tabela-responsiva {
+  width: 100%;
+  overflow-x: auto;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+.tabela-ncor {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--cor-texto-principal);
+}
+.tabela-ncor td {
+  padding: 16px 20px;
+  vertical-align: top;
+}
+.tabela-ncor tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+.tabela-ncor tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.tabela-ncor td:first-child {
+  width: 35%;
+  color: var(--cor-texto-principal);
+}
+.tabela-ncor td:last-child {
+  color: var(--cor-texto-secundario);
+}
+
+@media (max-width: 767px) {
+  .tabela-ncor,
+  .tabela-ncor tbody,
+  .tabela-ncor tr,
+  .tabela-ncor td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela-ncor tr {
+    margin-bottom: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  }
+
+  .tabela-ncor td {
+    padding: 12px 15px;
+  }
+
+  .tabela-ncor td:first-child {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+    font-weight: 600;
+  }
+}

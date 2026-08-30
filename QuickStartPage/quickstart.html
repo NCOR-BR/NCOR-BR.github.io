@@ -44,6 +44,7 @@
       href="../assets/cropped-Favicon_Jle-180x180.jpg"
     />
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../index2.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
@@ -93,9 +94,858 @@
       </nav>
     </header>
 
-    <main class="main-content">
+    <main class="page-content">
       <section class="hero-section">
         <h1>Quick-Start</h1>
+      </section>
+
+      <div class="filtros-publicacoes">
+        <button class="btn-filtro ativo" data-target="historico">
+          Introdução
+        </button>
+
+        <button class="btn-filtro" data-target="comunidades">
+          Comunidades e Eventos
+        </button>
+        <button class="btn-filtro" data-target="ferramentas">
+          Ferramentas
+        </button>
+        <button class="btn-filtro" data-target="glossario">
+          Glossário Básico
+        </button>
+        <button class="btn-filtro" data-target="livros">Livros</button>
+        <button class="btn-filtro" data-target="estudantes">
+          Para Estudantes
+        </button>
+        <button class="btn-filtro" data-target="negocios">Para Negócios</button>
+        <button class="btn-filtro" data-target="governo">Para Governo</button>
+        <button class="btn-filtro" data-target="pesquisadores">
+          Para Pesquisadores
+        </button>
+      </div>
+
+      <section class="conteudo-pub ativo" id="historico">
+        <h2>Breve histórico</h2>
+        <p>
+          Ontologia é um termo filosófico para estudos que remontam à
+          <a
+            href="https://www.jstor.org/stable/703756"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Aristóteles</a
+          >. Após um longo período de esquecimento, surgiu um novo interesse
+          pelas teorias de Aristóteles a partir dos anos de 1970. Nos anos de
+          1960, surgiu a primeira sugestão para o uso de ontologias em sistemas
+          de informação, em uma teoria de dados enunciada por
+          <a
+            href="https://tw.rpi.edu/media/2013/11/11/134fa/GHMealy-1967-FJCC-p525.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mealy</a
+          >:
+        </p>
+
+        <div class="image-container">
+          <img
+            class="pub-img"
+            src="../assets/image-1.png"
+            alt="Mealy-1967-FJCC-p525"
+          />
+          <p class="legenda">
+            Mealy, G. H. Another Look at Data. Proc. of the Joint Computer
+            Conference, 1967, pp. 525-534.
+          </p>
+        </div>
+
+        <p>
+          Nos anos de 1980, a ideia foi finalmente teorizada por
+          <a
+            href="https://www.semanticscholar.org/paper/Mario-Bunge%27s-ontology-as-a-formal-foundation-for-Wand-Weber/3d7a311457ae275ee8bc904d268f006d8238261b"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wand & Weber</a
+          >, a partir dos estudos de
+          <a
+            href="https://en.wikipedia.org/wiki/Mario_Bunge"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Bunge</a
+          >; e nos anos 1990, pesquisadores da Inteligência Artifical –
+          <a
+            href="https://mba.eci.ufmg.br/downloads/recol/FormalOntologyinInformationSystems2008.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Guarino</a
+          >,
+          <a
+            href="https://www.jfsowa.com/ontology/toplevel.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Sowa</a
+          >, dentre outros – estudaram a ontologia como base de conhecimento
+          para a arquitetura de sistemas especialistas da Inteligência
+          Artificial.
+        </p>
+        <p>
+          O termo “Ontologia Aplicada” foi disseminado a partir do trabalho
+          seminal de
+          <a
+            href="http://ontology.buffalo.edu/smith/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Barry Smith</a
+          >
+          iniciado por volta dos anos 2000 com a
+          <a
+            href="https://geneontology.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Gene Ontology</a
+          >. Smith proporcionou a fundamentação lógico-filosófica para obtenção
+          de inferências válidas e verdadeiras, bem como um
+          <a
+            href="https://philpapers.org/rec/SMIFOI-2?__cf_chl_tk=WjvCGyuido4lpEMf30ocr_0nUlUN71qkepiaRCdkSoU-1788106470-1.0.1.1-7MyJfczQbr8Ykx9u.iliTTwx907xoDe2k5LzDCBHiLg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >incremento na qualidade dos sistemas de informação</a
+          >.
+        </p>
+        <p>
+          <a
+            href="https://people.cs.ksu.edu/~hitzler/pub2/2020_CACM_SWsurvey-authorversion.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Nos últimos 20 anos</a
+          >, ontologia e web semântica têm se constituído em um campo de
+          pesquisa vibrante, ainda que muito precise ser feito para alcançar a
+          visão original de
+          <a
+            href="https://en.wikipedia.org/wiki/Tim_Berners-Lee"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tim Berners-Lee</a
+          >. Depois de um período restrito a academia, o tema passou a agenda de
+          <a
+            href="https://www.youtube.com/watch?v=MynCGvI1QSg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >empresas e indústrias</a
+          >.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="comunidades">
+        <h2>Comunidades e Eventos</h2>
+        <ul>
+          <li>
+            <a
+              href="https://iaoa.org/index.php/fois/#:~:text=The%20International%20Conference%20on%20Formal,and%20categorization%20of%20what%20exists."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Formal Ontology in Information Systems (FOIS) Conference</a
+            >
+          </li>
+          <li>
+            International Conference on Knowledge Engineering and Knowledge
+            Management (EKAW)
+          </li>
+          <li>Extended Semantic Web Conference (ESWC)</li>
+          <li>
+            International Conference on Knowledge Representation and Reasoning
+            (KR)
+          </li>
+          <li>
+            <a
+              href="https://icbo.buffalo.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >International Conference on Biomedical Ontology (ICBO)</a
+            >
+          </li>
+          <li>
+            Semantic Web Applications and Tools for the Life Sciences (SWAT4LS)
+          </li>
+          <li>International Semantic Web Conference (ISWC)</li>
+          <li>
+            <a
+              href="http://cleilaclo2018.mackenzie.br/pt/ontobras-2018.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ontobras</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.bio-ontologies.org.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Bio-Ontologies</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ncorwiki.buffalo.edu/index.php/Clinical_and_Translational_Science_Ontology_Group"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Clinical and Translational Science Ontology Group</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ontologforum.org/index.php/WikiHomePage"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ontolog</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://nemo.inf.ufes.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Nemo Group</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://recol.eci.ufmg.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ReCOL Group</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="conteudo-pub" id="ferramentas">
+        <h2>Ferramentas</h2>
+        <ul>
+          <li>
+            <a
+              href="https://protege.stanford.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Protégé</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://protege.stanford.edu/products.php#web-protege"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WebProtégé</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://onto4alleditor.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Onto for All</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.jarrar.info/Dogmamodeler/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >DogmaModeler</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://hegroup.org/ontozoo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Onto-animal tools</a
+            >:
+            <a
+              href="https://ontodog.hegroup.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ontodog</a
+            >,
+            <a
+              href="https://ontofox.hegroup.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ontofox</a
+            >,
+            <a
+              href="https://ontobee.org/introduction"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ontobee</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3.org/OWL/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >OWL Tools</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="conteudo-pub" id="glossario">
+        <h2>Glossário básico</h2>
+        <p>
+          <b>Ontologia como disciplina:</b> a ontologia é uma disciplina da
+          Filosofia, especificamente da
+          <a
+            href="https://www.ontology.co/ontologists.htm#gsc.tab=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Metafísica</a
+          >, que estuda as coisas do mundo e suas características.
+        </p>
+        <p>
+          <b>Ontologia como artefato:</b> trata-se de um artefato de
+          representação do conhecimento construído para sistemas de informação
+          em níveis variados de formalidade.
+        </p>
+        <p>
+          <b>Ontologia formal:</b> uma ontologia como artefato construída em uma
+          linguagem formal, por exemplo, algum tipo de lógica. O termo também
+          mantém outro significado em
+          <a
+            href="https://www.cambridge.org/core/books/cambridge-companion-to-husserl/BE0010E12326EF5F7197E51B44B4A7E8#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >antigas tradições filosóficas</a
+          >.
+        </p>
+        <p>
+          <b>Ontologia Aplicada:</b> a
+          <a
+            href="https://mba.eci.ufmg.br/wp-content/uploads/AS998735546982471400823119792_content_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >conjunção de princípios da ontologia como disciplina e ontologias
+            como artefatos</a
+          >. Adotam-se os princípios filosóficos como parâmetros de modelagem
+          bem fundamentados para desenvolver ontologias como artefatos.
+        </p>
+        <p>
+          <b>Ciência da Informação:</b> é um campo de pesquisa preocupado com
+          “<a
+            href="https://portaldeperiodicos.eci.ufmg.br/index.php/pci/article/view/235/22"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i
+              >os problemas da efetiva comunicação do conhecimento e seus
+              registros entre os seres humanos, no contexto social,
+              institucional ou individual do uso e das necessidades de
+              informação</i
+            ></a
+          >”. As vezes confundida com “Ciência da Computação” pela denominação
+          única adotada em alguns países.
+        </p>
+        <p>
+          <b>Linguagem de representação lógica:</b> trata-de uma linguagem
+          formal, baseada em algum tipo de lógica, que é utilizada em artefatos
+          de representação como as ontologias para fins de precisão e de
+          raciocínio automático. Um exemplo é a
+          <a
+            href="https://www.w3.org/TR/owl2-primer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Web Ontology Language</a
+          >.
+        </p>
+        <p>
+          <b>Linguagem de consulta:</b> da mesma forma que as conhecidas
+          linguagens para consulta a bancos de dados, o
+          <a
+            href="https://www.w3.org/TR/sparql11-overview/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SPARQL</a
+          >
+          é a linguagem mais popular para consultas a repositórios da
+          <a
+            href="https://pt.wikipedia.org/wiki/Web_sem%C3%A2ntica"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Web Semântica</a
+          >
+          e ontologias.
+        </p>
+        <p>
+          <b>Interoperabilidade:</b> objetivo complexo e multifacetado que, de
+          forma simples, pode ser definido como a capacidade de sistemas de
+          informação em trocar dados sem a intervenção humana.
+        </p>
+        <p>
+          <b><i>Basic Formal Ontology:</i></b> a
+          <a
+            href="basic-formal-ontology.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ontologia formal básica</a
+          >
+          é uma ontologia de referência, genérica, testada por mais de 20 anos e
+          amplamente adotada em alguns domínios (por exemplo,
+          <a
+            href="https://obofoundry.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Biomedicina</a
+          >) para fins de marcação de dados e inferência automática.
+        </p>
+        <p>
+          <b>Semântica (na Web Semântica):</b> no contexto da Web Semântica, o
+          termo “semântica” se refere a “semântica formal”, ou seja,
+          <a
+            href="https://mba.eci.ufmg.br/downloads/SemanticsSemWebko_38_2011.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >trata-se de uma função que conecta dois conjuntos</a
+          >.
+        </p>
+        <p>
+          <b>Ontologia do Social:</b> aplicação de teorias metafísicas da
+          ontologia ao campo das ciências sociais, com resultados práticos
+          relevantes para explicar, por exemplo,
+          <a
+            href="https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/asi.24337"
+            target="_blank"
+            rel="noopener noreferrer"
+            >a origem das organizações</a
+          >.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="livros">
+        <h2>Livros para começar</h2>
+        <img
+          class="pub-img"
+          src="../assets/41vCybi23lL._SX387_BO1,204,203,200_.jpg"
+          alt="Basic Formal Ontology"
+          style="margin-top: 20px"
+        />
+        <p class="legenda" style="text-align: justify !important">
+          <a
+            href="https://www.amazon.com/Building-Ontologies-Basic-Formal-Ontology/dp/0262527812"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Building Ontologies with Basic Formal Ontology (The MIT Press)</a
+          >
+        </p>
+
+        <hr
+          style="border: none; border-bottom: 1px solid #eaeaea; margin: 30px 0"
+        />
+
+        <img
+          class="pub-img"
+          src="../assets/image.png"
+          alt="Ontologia em Ciência da Informação - 1ª Edição"
+          style="margin-top: 20px"
+        />
+        <p class="legenda" style="text-align: justify !important">
+          Ontologia em Ciência da Informação: Teoria e Método, VOLUME 01.
+          Curitiba: CRV, 2020.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="estudantes">
+        <h2>O que é?</h2>
+        <p>
+          Do ponto de vista teórico, ontologia é uma disciplina fundamental da
+          Filosofia que tem origens na Grécia antiga e é representada em nossos
+          dias pelo trabalho de metafísicos analíticos como
+          <a
+            href="https://en.wikipedia.org/wiki/David_Malet_Armstrong"
+            target="_blank"
+            rel="noopener noreferrer"
+            >David Armstrong</a
+          >
+          e
+          <a
+            href="https://en.wikipedia.org/wiki/Kit_Fine"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Kit Fine</a
+          >.
+        </p>
+        <p>
+          Nesse sentido filosófico, ontologia é uma disciplina teórica: a
+          ciência do que é, dos tipos e estruturas de objetos, propriedades,
+          eventos, processos e relações em todas as áreas da realidade.
+        </p>
+
+        <h2>Interseção de Filosofia e Ciência da Informação</h2>
+        <p>
+          Ontologia também é, contudo, uma disciplina de cunho prático de
+          interesse crescente na interseção da Filosofia e da Ciência da
+          Informação. Ferramentas e teorias ontológicas estão cada vez mais
+          sendo aplicadas em informática, em segurança e inteligência,
+          legislação, na indústria, finanças, etc., onde servem como base para
+          uma forma de classificação aprimorada, integração de dados e
+          raciocínio automático.
+        </p>
+
+        <h2>Pesquisa em Ontologia Aplicada</h2>
+        <p>
+          Se quiser saber mais sobre a pesquisa em ontologias para vida
+          acadêmica, procure
+          <a
+            href="https://ncor-br.github.io/mba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >pesquisadores especializados da Ciência da Informação</a
+          >, profissionais com experiência (<a
+            href="linkedin.com/in/liviamarangondt"
+            target="_blank"
+            rel="noopener noreferrer"
+            >aqui</a
+          >
+          ou
+          <a
+            href="linkedin.com/in/jeannelouizeemygdio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >aqui</a
+          >) e se informe no NCOR-BR. O mapa abaixo resume
+          <a
+            href="https://mba.eci.ufmg.br/wp-content/uploads/AS998735546982471400823119792_content_1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >artigo</a
+          >
+          com um visão do que a Ontologia Aplicada abrange:
+        </p>
+
+        <img
+          class="mapa-img"
+          src="../assets/mapa-1024x701-2.png"
+          alt="Mapa da Ontologia Aplicada"
+        />
+        <p class="legenda">
+          ALMEIDA, M.B.; RIBEIRO, E.F.; BARCELOS, R. (2020). Toward a
+          Document-Centered Ontological Theory for Information Architecture in
+          Corporations. Journal of the American Society of Information Science
+          and Technology. DOI: 10.1002/asi.24337, EUA.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="negocios">
+        <h2>Para Negócios</h2>
+        <p>
+          Arquitetura da Informação (AI) é um termo muito popular, mas nunca
+          definido com precisão.
+        </p>
+        <p>
+          Trata-se de uma metáfora que faz analogia à visões dos projetos
+          necessários para se construir um edifício, aplicada à organização do
+          conhecimento e da informação corporativa.
+        </p>
+        <p>
+          Dentre essas visões, a forma de se conceber a estrutura da informação
+          e do conhecimento corporativos é o fundamento capaz de guiar todo o
+          projeto de AI.
+        </p>
+
+        <div class="image-container">
+          <img
+            class="pub-img"
+            src="../assets/image-3.png"
+            alt="Mapa de Projeto da Ontologia Aplicada"
+          />
+          <p class="legenda">
+            ALMEIDA, M.B.; RIBEIRO, E.F.; BARCELOS, R. (2020). Toward a
+            Document-Centered Ontological Theory for Information Architecture in
+            Corporations. JASIST. DOI: 10.1002/asi.24337, EUA.
+          </p>
+        </div>
+
+        <p>
+          Para modelar a organização considera-se: i) um nível para o domínio,
+          abrangendo o(s) nível(is) organizacional(is) obtido(s) pela modelagem
+          de seus processos e objetos, e; ii) acresce-se o
+          <b>nível ontológico</b>.
+        </p>
+
+        <p>
+          Esse último nível provê uma verificação da modelagem ao se basear nas
+          coisas e não no que as pessoas pensam sobre as coisas.
+        </p>
+
+        <div class="image-container">
+          <img
+            class="pub-img"
+            src="../assets/image-2.png"
+            alt="Ontologia Aplicada"
+          />
+          <p class="legenda">
+            ALMEIDA, M.B.; RIBEIRO, E.F.; BARCELOS, R. (2020). Toward a
+            Document-Centered Ontological Theory for Information Architecture in
+            Corporations. JASIST. DOI: 10.1002/asi.24337, EUA.
+          </p>
+        </div>
+
+        <p>
+          Embora a necessidade da teoria e estrutura possa ser questionada,
+          visto que existem <i>frameworks</i>, metodologias e ferramentas para
+          modelar negócios – por exemplo o
+          <a
+            href="https://www.opengroup.org/togaf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TOGAF</a
+          >
+          e o
+          <a
+            href="https://www.opengroup.org/archimate-forum/archimate-overview"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ArchiMate</a
+          >
+          – que sao verdadeiros padrões-de-fato. Até mesmo, ainda mais popular,
+          a
+          <a
+            href="https://en.wikipedia.org/wiki/UML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >UML</a
+          >.
+        </p>
+
+        <div class="image-container">
+          <img
+            class="pub-img"
+            src="../assets/image-4.png"
+            alt="Ontologia Aplicada"
+          />
+          <p class="legenda">
+            Adaptado de Almeida, M.B. Ontologia em Ciência da Informação. Volume
+            1. Curitiba: CRV, 2020.
+          </p>
+        </div>
+
+        <p>
+          Apenas as abordagens ontológicas legítimas tiram proveito de
+          princípios filosóficos sólidos, os quais podem transformar um modelo
+          ontológico em um metamodelo rigoroso.
+        </p>
+        <p>
+          Esse metamodelo é capaz de reduzir a ambiguidade inerente a outros
+          modelos espalhados pela organização e, na maioria da vezes, criados a
+          partir de principios ad-hoc.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="governo">
+        <h2>Para Governo</h2>
+        <p>
+          A variedade dos dados e informação na Administração Pública, seja na
+          esfera federal, estadual ou municipal, remete a um grande desafio aos
+          governos para prover serviços públicos de qualidade e de maneira mais
+          integrada aos cidadãos.
+        </p>
+        <p>
+          Se considerada ainda a variedade e a sobreposição de dados nas mais
+          distintas instâncias governamentais, o desafio se torna ainda maior
+          visto que a massificação do uso de tecnologias de informação e
+          comunicação (TICs) tem gerado cada vez mais dados e menos capacidade
+          de sua profícua utilização.
+        </p>
+        <p>
+          Para isso, cabe entender o que se chama de “<b>interoperabilidade</b>”
+          em seus vários sentidos e aspectos associados:
+        </p>
+
+        <div class="tabela-responsiva">
+          <table class="tabela-ncor">
+            <tbody>
+              <tr>
+                <td><i>Interoperabilidade técnica</i></td>
+                <td>
+                  padrões de comunicação, transporte, e armazenamento de dados.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade semântica</i></td>
+                <td>
+                  significado dos dados originados em diferentes sistemas;
+                  soluções precisam assegurar interpretações uniformes entre os
+                  sistemas.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade organizacional</i></td>
+                <td>
+                  envolve fluxos de trabalho, relações de poder e a cultura da
+                  instituição, que se manifestam na modelagem de processos de
+                  negócio.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade política e humana</i></td>
+                <td>
+                  envolve a forma como dados são disseminados, e a decisão
+                  consciente de torná-los disponíveis na organização.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade intercomunitária</i></td>
+                <td>
+                  acesso a dados originados em diferentes fontes, por
+                  organizações, especialistas e comunidades de natureza
+                  distintas.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade legal</i></td>
+                <td>
+                  exigências e implicações legais de tornar dados livres e
+                  amplamente disponíveis.
+                </td>
+              </tr>
+              <tr>
+                <td><i>Interoperabilidade internacional</i></td>
+                <td>
+                  cooperação e intercâmbio que envolve uma diversidade de
+                  padrões, além de problemas de comunicação e barreiras
+                  linguísticas.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Essa lista de significados mostra que a interoperabilidade não se
+          refere apenas a conformidade técnica, a qual é muito importante, mas
+          não suficiente.
+        </p>
+        <p>
+          A ontologia atua na <b>interoperabilidade semântica</b>, reduzindo a
+          ambiguidade e aumentando a precisão da terminologia, no sentido de
+          permitir interpretações alinhadas mesmo sem a intervenção de pessoas.
+        </p>
+        <p>
+          Em algumas áreas, como a saúde, a interoperabilidade envolve dotar
+          profissionais com o dado e a informação de qualidade para tomadas de
+          decisão muitas vezes críticas.
+        </p>
+
+        <div class="image-container">
+          <img
+            class="pub-img"
+            src="../assets/image-6-768x576.png"
+            alt="Realidade dos postos de Saúde no Brasil"
+          />
+          <p class="legenda">
+            A realidade nos postos de saude brasileiros: muita informação
+            registrada e isolada para sempre.
+          </p>
+        </div>
+
+        <p>
+          Um
+          <a
+            href="https://westhealth.org/wp-content/uploads/2015/02/The-Value-of-Medical-Device-Interoperability.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >relatório internacional</a
+          >
+          dá conta que interoperabilidade de dispositivos médicos poderia
+          eliminar pelo menos US $ 36 bilhões/ano em desperdícios nos ambientes
+          hospitalares (dados de 2013 nos Estados Unidos). No mesmo momento,
+          estima-se que um hospital de 500 leitos
+          <a
+            href="beckershospitalreview.com/lists/200-hospital-benchmarks-october-2012.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >custe cerca de US $ 750 milhões</a
+          >, o que equivale dizer que a falta de interoperabilidade consome o
+          equivalente a construção de 50 hospitais por ano.
+        </p>
+        <p>
+          Uma
+          <a
+            href="https://www.i-hd.eu/index.cfm/resources/ec-projects-results/semantichealthnet/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >iniciativa da União Europeia</a
+          >
+          também está em curso no mesmo sentido. No Brasil não se tem
+          estimativas precisas, mas a situação não é diferente. O que vale para
+          um setor importante como cuidados à saúde, vale também para setores
+          estratégicos de qualquer nação.
+        </p>
+        <p>
+          Insitituições públicas são complexos sistemas normativos. A
+          representação desses sistemas está explicada em
+          <a
+            href="https://revista.ibict.br/ciinf/article/view/4024"
+            target="_blank"
+            rel="noopener noreferrer"
+            >artigo</a
+          >
+          resumido pelo mapa mental abaixo:
+        </p>
+
+        <img
+          class="mapa-img"
+          src="../assets/mapa_normative.png"
+          alt="Mapa Sistemas Normativos"
+        />
+        <p class="legenda">
+          Almeida, M.B.; Brochhausen, M.; Silva, F.B. (2017). An ontological
+          approach to the normative dimension of organizations: an application
+          of Documents Acts Ontology. CI, v.46, n.1, p.213-226.
+        </p>
+      </section>
+
+      <section class="conteudo-pub" id="pesquisadores">
+        <h2>Para Pesquisadores</h2>
+        <p>
+          O grupo de pesquisa
+          <b>Representação do Conhecimento, Ontologias e Linguagem (ReCOL)</b> é
+          <a
+            href="http://dgp.cnpq.br/dgp/espelhogrupo/3706270158140882"
+            target="_blank"
+            rel="noopener noreferrer"
+            >certificado</a
+          >
+          pelo
+          <a
+            href="https://www.gov.br/cnpq/pt-br"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Conselho Nacional de Desenvolvimento Científico e Tecnológico</a
+          >
+          (CNPq) e desenvolve pesquisas na área da Representação e Organização
+          do Conhecimento, contando principalmente com pesquisadores da
+          <a
+            href="https://www.ufmg.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Universidade Federal de Minas Gerais</a
+          >
+          (UFMG) e da
+          <a
+            href="https://portal.fgv.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Fundação Getúlio Vargas</a
+          >
+          (FGV).
+        </p>
+        <p>
+          Clique e conheça o
+          <a
+            href="https://recol.eci.ufmg.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ReCOL</a
+          >.
+        </p>
       </section>
     </main>
 

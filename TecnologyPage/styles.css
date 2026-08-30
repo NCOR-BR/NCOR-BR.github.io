@@ -1,0 +1,100 @@
+:root {
+  --cor-texto-principal: #333333;
+  --cor-texto-secundario: #555555;
+  --fundo-secao-clara: #f9f9fa;
+  --fonte-titulos: "Montserrat", sans-serif;
+  --fonte-textos: "Noto Sans", sans-serif;
+}
+
+.conteudo-pub {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+.conteudo-pub.ativo {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pub-img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.pub-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================
+   PÁGINA EDITORES
+========================================================== */
+
+.protege-img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.protege-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.legenda {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+  text-align: center !important;
+  margin-top: 5px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.links a {
+  text-decoration: none;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fundo-secao-clara);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.links a:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+.fa-brands {
+  font-size: 1.3rem;
+}

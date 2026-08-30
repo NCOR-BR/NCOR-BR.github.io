@@ -42,7 +42,8 @@ body {
   color: var(--cor-texto-secundario);
   text-align: justify;
 }
-.page-content ul {
+.page-content ul,
+.page-content ol {
   margin-bottom: 25px;
   padding-left: 40px;
   color: var(--cor-texto-secundario);

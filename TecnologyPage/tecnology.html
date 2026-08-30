@@ -44,6 +44,7 @@
       href="../assets/cropped-Favicon_Jle-180x180.jpg"
     />
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../index2.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
@@ -52,6 +53,13 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="menu-mobile-header" onclick="toggleSidebar()">
@@ -93,9 +101,212 @@
       </nav>
     </header>
 
-    <main class="main-content">
+    <main class="page-content">
       <section class="hero-section">
         <h1>Tecnologia</h1>
+      </section>
+
+      <div class="filtros-publicacoes">
+        <button class="btn-filtro ativo" data-target="tecnologia">
+          Tecnologia
+        </button>
+        <button class="btn-filtro" data-target="metodologia">
+          Metodologia
+        </button>
+        <button class="btn-filtro" data-target="editores">Editores</button>
+      </div>
+
+      <section class="conteudo-pub ativo" id="tecnologia">
+        <h3>
+          <i>
+            Pessoas entendem significado em diferentes contextos, computadores
+            não.
+          </i>
+        </h3>
+
+        <p>
+          Ontologias são artefatos que computadores usam para lidar com
+          representações de coisas do mundo, aquelas com as quais convivemos
+          diariamente sejam árvores, bactérias, carros, instituições, livros,
+          loterias, governos, pessoas, suas profissões, sistemas, etc.
+        </p>
+        <p>
+          Esses artefatos, chamados “<b>ontologias</b>”, fornecem esquemas aos
+          computadores tornando-os capazes de suportar
+          <b>inferências lógicas</b>, ou seja, <b>raciocínio automático</b>. As
+          ontologias são representações formais e rigorosas das coisas do mundo
+          e das relações entre elas.
+        </p>
+        <p>
+          Essa é a abordagem da disciplina da <b>Ontologia Aplicada</b>, onde a
+          ênfase recai na representação das coisas em si e não nas palavras
+          usadas para descrever tais coisas. Por sua ênfase em representar
+          coisas, e não a complexidade da linguagem humana, ontologias são
+          empregadas em todo o mundo para <b>interoperabilidade</b> entre
+          sistemas na área médica, legal, industrial, dentre outras.
+        </p>
+
+        <h2>Ontologias na Web Semântica</h2>
+        <p>
+          Ontologias estão associadas a sistemas de informação e podem ser
+          usadas tanto por pessoas quanto por máquinas. Estão atualmente
+          envolvidas com os esforços para fornecer semântica aos recursos da
+          Internet, no ambito da
+          <a
+            href="https://pt.wikipedia.org/wiki/Web_sem%C3%A2ntica"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Web Semântica</a
+          >.
+        </p>
+        <p>
+          O
+          <a
+            href="https://www.w3.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >World Wide Web Consortium</a
+          >
+          (W3C) cria e mantém os padrões para as tecnologias da Web Semântica
+          que incluem linguagens de representação lógicas, linguagens de
+          consulta, interfaces e mecanismos de inferência.
+        </p>
+
+        <h2>Por que tecnologias da Web Semântica?</h2>
+        <ul>
+          <li>
+            Os princípios teóricos da Ontologia Aplicada, adotados na construção
+            de artefatos ontológicos, proporcionam modelos bem fundamentados;
+          </li>
+          <li>
+            A ontologia é um modelo declarativo que torna explícita a expertise
+            de um domínio do conhecimento;
+          </li>
+          <li>
+            Ontologias lidam com mudanças no status do conhecimento, enquanto
+            mudanças em bancos de dados levam a retrabalho com a criação
+            imediata de novas tabelas;
+          </li>
+          <li>
+            A ontologia é computável e útil no local onde está, além de
+            continuar disponível na forma original para consultas em aplicações
+            distribuídas;
+          </li>
+          <li>
+            A cláusula de mundo-aberto permite lidar com conhecimento complexo e
+            incompleto;
+          </li>
+          <li>
+            A ontologia faz uso de identificadores únicos que definem recursos
+            do modelo de forma unívoca, ao longo das três camadas (conceitual,
+            lógica e física).
+          </li>
+        </ul>
+      </section>
+
+      <section class="conteudo-pub" id="metodologia">
+        <p>
+          Existem muitas metodologias para a construção de ontologias, mas ainda
+          se diz que construir ontologias é um trabalho um tanto “artesanal”.
+        </p>
+        <p>As etapas variam muito, mas observem em geral as seguintes:</p>
+        <ol>
+          <li>Especificação</li>
+          <li>Aquisição de Conhecimento</li>
+          <li>Organização ontológica de entidades</li>
+          <li>Organização ontológica de relacionamentos</li>
+          <li>Formalização</li>
+          <li>Avaliação</li>
+        </ol>
+      </section>
+
+      <section class="conteudo-pub" id="editores">
+        <p>
+          Editores de ontologias consagrados com o
+          <a
+            href="https://protege.stanford.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Protegé</a
+          >
+          da <i>Standford University</i> tem sido desenvolvidos desde os anos de
+          1990 e corresponde ao estado da arte em desenvolvimento, com
+          excelentes resultados em todas as áreas.
+        </p>
+        <img
+          src="../assets/editores_image.png"
+          alt="Protegé"
+          class="protege-img"
+        />
+        <p class="legenda">
+          Tela com visualização no Protegé, disponível em
+          https://protege.stanford.edu/products.php, acesso em 21/10/2021.
+        </p>
+        <p>
+          Uma opção para iniciantes, em fase de desenvolvimento, é o
+          <a
+            href="http://onto4alleditor.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ONTO4ALLEDITOR</a
+          >.
+        </p>
+
+        <div class="links">
+          <a
+            href="https://wordpress.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: #0073aa"
+          >
+            <i class="fa-brands fa-wordpress"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: #0866ff"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: #000000"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: #f00075"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: #0d66c2"
+          >
+            <i class="fa-brands fa-square-linkedin"></i>
+          </a>
+
+          <a
+            href="youtube.com/?sttick=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="background-color: red"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
       </section>
     </main>
 
